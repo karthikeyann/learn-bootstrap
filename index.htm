@@ -94,18 +94,37 @@
 		<div class="modal fade" id="contact" role = "dialog">
 		<div class="modal-dialog">
 			<div class="modal-content" >
-				<div class="modal-header" >
-					<h4> Contact Tech Site</h4>
-				</div>
-				<div class="modal-body">
-				<p>Karthikeyan Natarajan <br>
-					  +91 XXX XX XXXXX
-				</p>
-				</div>
-				<div class="modal-footer" >
-						<a href="#" class="btn btn-primary" >Send Message</a>
-						<a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>
-				</div>
+			<form class = "form-horizontal">
+					<div class="modal-header" >
+						<h4> Contact Tech Site</h4>
+					</div>
+					<div class="modal-body">
+					
+						<div class  = "form-group" >
+							<label for = "contact-name" class="col-lg-2 control-label"> Name:</label> 
+							<div class="col-lg-10" >
+								<input type = "text"  class="form-control"  id = "contact-name" placeholder = "Full Name" >
+							</div>
+						</div>
+						  <div class  = "form-group" >
+							<label for = "contact-email" class="col-lg-2 control-label"> Email:</label> 
+							<div class="col-lg-10" >
+								<input type = "email"  class="form-control"  id = "contact-email" placeholder = "you@example.com" >
+							</div>
+						</div>
+						   <div class  = "form-group" >
+							<label for = "contact-message" class="col-lg-2 control-label"> Message:</label> 
+							<div class="col-lg-10" >
+								<textarea class="form-control" rows = "6" id="contact-message" placeholder = "your query here." ></textarea>
+							</div>
+						</div>
+						  
+					</div>
+					<div class="modal-footer" >
+							<a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>
+							<button class="btn  btn-primary" type = "submit" >Send Message</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
